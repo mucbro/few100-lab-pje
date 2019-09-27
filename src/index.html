@@ -8,7 +8,6 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
-    ">
 </head>
 
 <body>
@@ -19,11 +18,13 @@
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text"
-                      id="basic-addon1">@</span>
+                      id="basic-addon1">$</span>
             </div>
             <input type="text"
+                    id="subtotal"
                    class="form-control"
-                   aria-label="Username"
+                   aria-label="Subtotal"
+                   aria-placeholder="Subtotal"
                    aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3">
@@ -31,22 +32,25 @@
                  class="input-group-prepend">
                 <button class="btn btn-secondary"
                         id="ten"
+                        value=".1"
                         type="button">10%</button>
                 <button class="btn btn-secondary"
                         id="fifteen"
+                        value=".15"
                         type="button">15%</button>
                 <button class="btn btn-secondary"
                         id="twenty"
+                        value=".2"
                         type="button">20%</button>
             </div>
 
         </div>
 
         <ul class="list-group">
-            <li class="list-group-item">Bill Amount: </li>
-            <li class="list-group-item">Tip Percentage: </li>
-            <li class="list-group-item">Amount of Tip: </li>
-            <li class="list-group-item">Total to be Paid: </li>
+            <li class="list-group-item">Bill Amount: $<span id="BillAmount"></span></li>
+            <li class="list-group-item">Tip Percentage: <span id="TipPercentage"></span>%</li>
+            <li class="list-group-item">Amount of Tip: $<span id="TipAmount"></span></li>
+            <li class="list-group-item">Total to be Paid: $<span id="TotalToBePaid"></span></li>
         </ul>
     </div>
 </body>
